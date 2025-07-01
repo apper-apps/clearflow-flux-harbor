@@ -1,0 +1,38 @@
+[
+  {
+    "Id": 1,
+    "accountName": "Chase Checking",
+    "accountNumber": "****1234",
+    "balance": 2540.75,
+    "bankName": "Chase Bank",
+    "accountType": "Checking",
+    "isActive": true
+  },
+  {
+    "Id": 2,
+    "accountName": "Wells Fargo Savings",
+    "accountNumber": "****5678",
+    "balance": 8750.50,
+    "bankName": "Wells Fargo",
+    "accountType": "Savings",
+    "isActive": true
+  },
+  {
+    "Id": 3,
+    "accountName": "Bank of America Credit",
+    "accountNumber": "****9012",
+    "balance": -1250.25,
+    "bankName": "Bank of America",
+    "accountType": "Credit",
+    "isActive": true
+  },
+  {
+    "Id": 4,
+    "accountName": "Capital One 360",
+    "accountNumber": "****3456",
+    "balance": 15680.00,
+    "bankName": "Capital One",
+    "accountType": "Savings",
+    "isActive": false
+  }
+]
