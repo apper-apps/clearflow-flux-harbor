@@ -10,9 +10,9 @@ import Reports from '@/components/pages/Reports';
 import Goals from '@/components/pages/Goals';
 import Investments from '@/components/pages/Investments';
 function App() {
-  return (
+return (
     <Router>
-      <div className="min-h-screen bg-white">
+      <div className="min-h-screen bg-neutral-25">
         <Layout>
 <Routes>
             <Route path="/" element={<Dashboard />} />
