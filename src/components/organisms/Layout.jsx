@@ -8,9 +8,10 @@ const Layout = ({ children }) => {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
   const location = useLocation();
 
-  const navigation = [
+const navigation = [
     { name: 'Dashboard', href: '/', icon: 'LayoutDashboard' },
     { name: 'Transactions', href: '/transactions', icon: 'Receipt' },
+    { name: 'Invoices', href: '/invoices', icon: 'FileText' },
     { name: 'Subscriptions', href: '/subscriptions', icon: 'Calendar' },
     { name: 'Reports', href: '/reports', icon: 'BarChart3' },
     { name: 'Goals', href: '/goals', icon: 'Target' },

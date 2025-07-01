@@ -1,0 +1,55 @@
+[
+  {
+    "Id": 1,
+    "filename": "invoice-2024-001.pdf",
+    "size": 245760,
+    "type": "application/pdf",
+    "uploadDate": "2024-01-15T10:30:00.000Z",
+    "status": "processed",
+    "extractedData": {
+      "invoiceNumber": "INV-2024-001",
+      "vendor": "Office Supplies Co",
+      "amount": 129.99,
+      "currency": "USD",
+      "dueDate": "2024-02-15"
+    }
+  },
+  {
+    "Id": 2,
+    "filename": "receipt-tech-services.jpg",
+    "size": 1024000,
+    "type": "image/jpeg",
+    "uploadDate": "2024-01-12T14:22:00.000Z",
+    "status": "processed",
+    "extractedData": {
+      "invoiceNumber": "REC-2024-045",
+      "vendor": "TechServ Solutions",
+      "amount": 850.00,
+      "currency": "USD"
+    }
+  },
+  {
+    "Id": 3,
+    "filename": "utility-bill-january.pdf",
+    "size": 156832,
+    "type": "application/pdf",
+    "uploadDate": "2024-01-08T09:15:00.000Z",
+    "status": "processed",
+    "extractedData": {
+      "invoiceNumber": "UB-2024-001",
+      "vendor": "City Power & Light",
+      "amount": 234.56,
+      "currency": "USD",
+      "dueDate": "2024-02-08"
+    }
+  },
+  {
+    "Id": 4,
+    "filename": "consulting-invoice-dec.png",
+    "size": 512000,
+    "type": "image/png",
+    "uploadDate": "2024-01-05T16:45:00.000Z",
+    "status": "processing",
+    "extractedData": null
+  }
+]

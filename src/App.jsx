@@ -4,19 +4,20 @@ import { ToastContainer } from 'react-toastify';
 import Layout from '@/components/organisms/Layout';
 import Dashboard from '@/components/pages/Dashboard';
 import Transactions from '@/components/pages/Transactions';
+import Invoices from '@/components/pages/Invoices';
 import Subscriptions from '@/components/pages/Subscriptions';
 import Reports from '@/components/pages/Reports';
 import Goals from '@/components/pages/Goals';
 import Investments from '@/components/pages/Investments';
-
 function App() {
   return (
     <Router>
       <div className="min-h-screen bg-white">
         <Layout>
-          <Routes>
+<Routes>
             <Route path="/" element={<Dashboard />} />
             <Route path="/transactions" element={<Transactions />} />
+            <Route path="/invoices" element={<Invoices />} />
             <Route path="/subscriptions" element={<Subscriptions />} />
             <Route path="/reports" element={<Reports />} />
             <Route path="/goals" element={<Goals />} />
