@@ -1,0 +1,104 @@
+{
+  "transactions": [
+    {
+      "Id": 1,
+      "type": "expense",
+      "amount": 1200,
+      "category": "Food",
+      "description": "Grocery shopping at Fresh Market",
+      "date": "2024-01-15",
+      "recurring": false,
+      "bankAccount": "Main Account"
+    },
+    {
+      "Id": 2,
+      "type": "income",
+      "amount": 75000,
+      "category": "Salary",
+      "description": "Monthly salary deposit",
+      "date": "2024-01-01",
+      "recurring": true,
+      "bankAccount": "Main Account"
+    },
+    {
+      "Id": 3,
+      "type": "expense",
+      "amount": 2500,
+      "category": "Transport",
+      "description": "Metro card recharge",
+      "date": "2024-01-10",
+      "recurring": false,
+      "bankAccount": "Main Account"
+    },
+    {
+      "Id": 4,
+      "type": "expense",
+      "amount": 800,
+      "category": "Entertainment",
+      "description": "Movie tickets and dinner",
+      "date": "2024-01-08",
+      "recurring": false,
+      "bankAccount": "Main Account"
+    },
+    {
+      "Id": 5,
+      "type": "expense",
+      "amount": 15000,
+      "category": "Shopping",
+      "description": "New laptop purchase",
+      "date": "2024-01-05",
+      "recurring": false,
+      "bankAccount": "Main Account"
+    },
+    {
+      "Id": 6,
+      "type": "expense",
+      "amount": 3200,
+      "category": "Bills",
+      "description": "Electricity and water bill",
+      "date": "2024-01-03",
+      "recurring": true,
+      "bankAccount": "Main Account"
+    },
+    {
+      "Id": 7,
+      "type": "income",
+      "amount": 5000,
+      "category": "Business",
+      "description": "Freelance project payment",
+      "date": "2024-01-12",
+      "recurring": false,
+      "bankAccount": "Business Account"
+    },
+    {
+      "Id": 8,
+      "type": "expense",
+      "amount": 1500,
+      "category": "Healthcare",
+      "description": "Medical checkup and medicines",
+      "date": "2024-01-14",
+      "recurring": false,
+      "bankAccount": "Main Account"
+    },
+    {
+      "Id": 9,
+      "type": "expense",
+      "amount": 600,
+      "category": "Food",
+      "description": "Coffee shop and lunch",
+      "date": "2024-01-16",
+      "recurring": false,
+      "bankAccount": "Main Account"
+    },
+    {
+      "Id": 10,
+      "type": "income",
+      "amount": 2000,
+      "category": "Investment",
+      "description": "Dividend from mutual funds",
+      "date": "2024-01-11",
+      "recurring": false,
+      "bankAccount": "Investment Account"
+    }
+  ]
+}

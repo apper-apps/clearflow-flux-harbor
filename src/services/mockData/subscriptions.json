@@ -1,0 +1,67 @@
+{
+  "subscriptions": [
+    {
+      "Id": 1,
+      "name": "Netflix Premium",
+      "amount": 649,
+      "frequency": "monthly",
+      "nextDue": "2024-02-15",
+      "category": "Entertainment",
+      "active": true
+    },
+    {
+      "Id": 2,
+      "name": "Spotify Family",
+      "amount": 179,
+      "frequency": "monthly",
+      "nextDue": "2024-02-10",
+      "category": "Entertainment",
+      "active": true
+    },
+    {
+      "Id": 3,
+      "name": "Microsoft Office 365",
+      "amount": 4199,
+      "frequency": "yearly",
+      "nextDue": "2024-08-01",
+      "category": "Software",
+      "active": true
+    },
+    {
+      "Id": 4,
+      "name": "Amazon Prime",
+      "amount": 1499,
+      "frequency": "yearly",
+      "nextDue": "2024-06-15",
+      "category": "Shopping",
+      "active": true
+    },
+    {
+      "Id": 5,
+      "name": "Gym Membership",
+      "amount": 2500,
+      "frequency": "monthly",
+      "nextDue": "2024-02-01",
+      "category": "Health",
+      "active": true
+    },
+    {
+      "Id": 6,
+      "name": "Disney+ Hotstar",
+      "amount": 1499,
+      "frequency": "yearly",
+      "nextDue": "2024-04-20",
+      "category": "Entertainment",
+      "active": false
+    },
+    {
+      "Id": 7,
+      "name": "Adobe Creative Cloud",
+      "amount": 1675,
+      "frequency": "monthly",
+      "nextDue": "2024-02-08", 
+      "category": "Software",
+      "active": true
+    }
+  ]
+}

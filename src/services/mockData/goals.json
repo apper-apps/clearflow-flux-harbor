@@ -1,0 +1,44 @@
+{
+  "goals": [
+    {
+      "Id": 1,
+      "name": "Emergency Fund",
+      "targetAmount": 300000,
+      "currentAmount": 185000,
+      "deadline": "2024-12-31",
+      "category": "Savings"
+    },
+    {
+      "Id": 2,
+      "name": "New Car",
+      "targetAmount": 800000,
+      "currentAmount": 245000,
+      "deadline": "2025-06-15",
+      "category": "Purchase"
+    },
+    {
+      "Id": 3,
+      "name": "Vacation Fund",
+      "targetAmount": 150000,
+      "currentAmount": 95000,
+      "deadline": "2024-08-01",
+      "category": "Travel"
+    },
+    {
+      "Id": 4,
+      "name": "Home Down Payment",
+      "targetAmount": 2000000,
+      "currentAmount": 680000,
+      "deadline": "2026-03-31",
+      "category": "Real Estate"
+    },
+    {
+      "Id": 5,
+      "name": "Retirement Fund",
+      "targetAmount": 5000000,
+      "currentAmount": 1250000,
+      "deadline": "2045-12-31",
+      "category": "Retirement"
+    }
+  ]
+}

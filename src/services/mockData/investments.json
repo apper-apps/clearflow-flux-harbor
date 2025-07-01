@@ -1,0 +1,76 @@
+{
+  "investments": [
+    {
+      "Id": 1,
+      "name": "Reliance Industries",
+      "symbol": "RELIANCE",
+      "type": "stock",
+      "investedAmount": 25000,
+      "currentValue": 28500,
+      "units": 12
+    },
+    {
+      "Id": 2,
+      "name": "HDFC Bank",
+      "symbol": "HDFCBANK",
+      "type": "stock",
+      "investedAmount": 30000,
+      "currentValue": 32400,
+      "units": 20
+    },
+    {
+      "Id": 3,
+      "name": "SBI Large Cap Fund",
+      "symbol": "SBILCF",
+      "type": "mutual_fund",
+      "investedAmount": 50000,
+      "currentValue": 54200,
+      "units": 850
+    },
+    {
+      "Id": 4,
+      "name": "ICICI Prudential Bluechip Fund",
+      "symbol": "ICICIBC",
+      "type": "mutual_fund",
+      "investedAmount": 40000,
+      "currentValue": 43800,
+      "units": 682
+    },
+    {
+      "Id": 5,
+      "name": "Tata Consultancy Services",
+      "symbol": "TCS",
+      "type": "stock",
+      "investedAmount": 35000,
+      "currentValue": 33200,
+      "units": 10
+    },
+    {
+      "Id": 6,
+      "name": "Axis Small Cap Fund",
+      "symbol": "AXISSM",
+      "type": "mutual_fund",
+      "investedAmount": 20000,
+      "currentValue": 22800,
+      "units": 385
+    },
+    {
+      "Id": 7,
+      "name": "Infosys",
+      "symbol": "INFY",
+      "type": "stock",
+      "investedAmount": 22000,
+      "currentValue": 24600,
+      "units": 15
+    },
+    {
+      "Id": 8,
+      "name": "Mirae Asset Large Cap Fund",
+      "symbol": "MIRALC",
+      "type": "mutual_fund",
+      "investedAmount": 60000,
+      "currentValue": 66300,
+      "units": 920
+    }
+  ]
+}
