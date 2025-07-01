@@ -1,44 +1,61 @@
 {
   "goals": [
-    {
+{
       "Id": 1,
       "name": "Emergency Fund",
       "targetAmount": 300000,
       "currentAmount": 185000,
       "deadline": "2024-12-31",
-      "category": "Savings"
+      "category": "Savings",
+      "milestones": [
+        { "threshold": 25, "achievedAt": "2024-01-15", "amount": 75000 },
+        { "threshold": 50, "achievedAt": "2024-03-20", "amount": 150000 }
+      ]
     },
-    {
+{
       "Id": 2,
       "name": "New Car",
       "targetAmount": 800000,
       "currentAmount": 245000,
       "deadline": "2025-06-15",
-      "category": "Purchase"
+      "category": "Purchase",
+      "milestones": [
+        { "threshold": 25, "achievedAt": "2024-02-10", "amount": 200000 }
+      ]
     },
-    {
+{
       "Id": 3,
       "name": "Vacation Fund",
       "targetAmount": 150000,
       "currentAmount": 95000,
       "deadline": "2024-08-01",
-      "category": "Travel"
+      "category": "Travel",
+      "milestones": [
+        { "threshold": 25, "achievedAt": "2024-01-05", "amount": 37500 },
+        { "threshold": 50, "achievedAt": "2024-02-28", "amount": 75000 }
+      ]
     },
-    {
+{
       "Id": 4,
       "name": "Home Down Payment",
       "targetAmount": 2000000,
       "currentAmount": 680000,
       "deadline": "2026-03-31",
-      "category": "Real Estate"
+      "category": "Real Estate",
+      "milestones": [
+        { "threshold": 25, "achievedAt": "2023-12-15", "amount": 500000 }
+      ]
     },
-    {
+{
       "Id": 5,
       "name": "Retirement Fund",
       "targetAmount": 5000000,
       "currentAmount": 1250000,
       "deadline": "2045-12-31",
-      "category": "Retirement"
+      "category": "Retirement",
+      "milestones": [
+        { "threshold": 25, "achievedAt": "2023-06-01", "amount": 1250000 }
+      ]
     }
   ]
 }

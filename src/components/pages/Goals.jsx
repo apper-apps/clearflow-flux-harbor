@@ -5,7 +5,7 @@ import { toast } from 'react-toastify';
 import ApperIcon from '@/components/ApperIcon';
 import Card from '@/components/atoms/Card';
 import Button from '@/components/atoms/Button';
-import ProgressRing from '@/components/molecules/ProgressRing';
+import GoalProgressCard from '@/components/molecules/GoalProgressCard';
 import Loading from '@/components/ui/Loading';
 import Empty from '@/components/ui/Empty';
 import Error from '@/components/ui/Error';
@@ -101,103 +101,19 @@ const Goals = () => {
           actionLabel="Add Goal"
           icon="Target"
         />
-      ) : (
+) : (
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-          {goals.map((goal, index) => {
-            const progressPercentage = getProgressPercentage(goal.currentAmount, goal.targetAmount);
-            const progressColor = getProgressColor(progressPercentage);
-            const remainingAmount = goal.targetAmount - goal.currentAmount;
-            
-            return (
-              <motion.div
-                key={goal.Id}
-                initial={{ opacity: 0, y: 20 }}
-                animate={{ opacity: 1, y: 0 }}
-                transition={{ delay: index * 0.1 }}
-              >
-                <Card className="relative">
-                  <div className="flex items-start justify-between mb-6">
-                    <div>
-                      <h4 className="text-lg font-display font-semibold text-gray-900">
-                        {goal.name}
-                      </h4>
-                      <p className="text-sm text-gray-600">{goal.category}</p>
-                      <p className="text-xs text-gray-500 mt-1">
-                        Due: {format(new Date(goal.deadline), 'MMM dd, yyyy')}
-                      </p>
-                    </div>
-                    
-                    <div className="flex items-center space-x-1">
-                      <motion.button
-                        whileHover={{ scale: 1.1 }}
-                        whileTap={{ scale: 0.9 }}
-                        onClick={() => handleContribute(goal.Id, 1000)}
-                        className="p-2 text-gray-400 hover:text-primary-600 hover:bg-primary-50 rounded-lg transition-colors"
-                        title="Add contribution"
-                      >
-                        <ApperIcon name="Plus" className="w-4 h-4" />
-                      </motion.button>
-                      
-                      <motion.button
-                        whileHover={{ scale: 1.1 }}
-                        whileTap={{ scale: 0.9 }}
-                        onClick={() => handleDelete(goal.Id)}
-                        className="p-2 text-gray-400 hover:text-red-600 hover:bg-red-50 rounded-lg transition-colors"
-                      >
-                        <ApperIcon name="Trash2" className="w-4 h-4" />
-                      </motion.button>
-                    </div>
-                  </div>
-
-                  <div className="flex items-center justify-center mb-6">
-                    <ProgressRing
-                      percentage={progressPercentage}
-                      color={progressColor}
-                      size={120}
-                    >
-                      <div className="text-center">
-                        <p className="text-2xl font-bold text-gray-900">
-                          {progressPercentage.toFixed(0)}%
-                        </p>
-                        <p className="text-xs text-gray-600">Complete</p>
-                      </div>
-                    </ProgressRing>
-                  </div>
-
-                  <div className="space-y-3">
-                    <div className="flex items-center justify-between">
-                      <span className="text-sm text-gray-600">Current</span>
-                      <span className="font-semibold text-gray-900">
-                        ₹{goal.currentAmount.toLocaleString()}
-                      </span>
-                    </div>
-                    
-                    <div className="flex items-center justify-between">
-                      <span className="text-sm text-gray-600">Target</span>
-                      <span className="font-semibold text-gray-900">
-                        ₹{goal.targetAmount.toLocaleString()}
-                      </span>
-                    </div>
-                    
-                    <div className="flex items-center justify-between">
-                      <span className="text-sm text-gray-600">Remaining</span>
-                      <span className="font-semibold text-primary-600">
-                        ₹{Math.max(0, remainingAmount).toLocaleString()}
-                      </span>
-                    </div>
-                  </div>
-
-                  {progressPercentage >= 100 && (
-                    <div className="absolute top-4 right-4">
-                      <div className="w-8 h-8 bg-green-100 rounded-full flex items-center justify-center">
-                        <ApperIcon name="Check" className="w-5 h-5 text-green-600" />
-                      </div>
-                    </div>
-                  )}
-                </Card>
-              </motion.div>
-            );
-          })}
+          {goals.map((goal, index) => (
+            <GoalProgressCard
+              key={goal.Id}
+              goal={goal}
+              index={index}
+              onContribute={handleContribute}
+              onDelete={handleDelete}
+              getProgressPercentage={getProgressPercentage}
+              getProgressColor={getProgressColor}
+            />
+          ))}
         </div>
       )}
     </div>
